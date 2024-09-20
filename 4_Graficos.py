@@ -7,7 +7,7 @@ def load_data():
     # Verificar se "data" já foi inicializado no session_state, caso contrário, inicializar com dados de exemplo
     if "data" not in st.session_state:
         # Lê o arquivo CSV
-        data_raw = pd.read_csv('C:\\Users\\aleguimaraes\\repos\\aulas_dsfame_streamlit\\data\\Total.csv', sep=';')
+        data_raw = pd.read_csv('https://github.com/alexadrez/inventory-tracker-1/blob/main/Total.csv', sep=';')
         
         # Remove as linhas onde a coluna "ID" tem valores ausentes
         data_cleaned = data_raw.dropna(subset=["ID"])
